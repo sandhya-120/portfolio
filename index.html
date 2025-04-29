@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandhya Diddi | Frontend Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- for icons -->
+</head>
+<body>
+
+<div class="main">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#resume">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section home">
+    <div class="welcome-text">Welcome to My Portfolio</div>
+    <div class="logo-profile">
+      <img src="image.jpeg" alt="Sandhya Diddi Profile Photo" class="logo-image" />
+      <h1 class="logo-name">Sandhya Diddi</h1>
+      <p class="logo-title">Frontend Developer</p>
+    </div>
+    <div class="profile-text">
+      <p>Hello! I'm Sandhya, a Frontend Developer passionate about creating beautiful, user-friendly web experiences. I specialize in HTML, CSS, JavaScript, and modern frameworks like React and Angular.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2 class="welcome-text">About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Hello! I'm <strong>Sandhya Diddi</strong>, a passionate <strong>Frontend Developer</strong> dedicated to building responsive, clean, and user-friendly web applications.</p>
+
+        <p>Currently pursuing my <strong>B.Tech</strong>, I focus on blending technology and marketing skills. I thrive on creativity, innovation, and continuous learning, with hands-on experience in community service and mobile app development.</p>
+
+        <p>I am eager to contribute my skills and creativity to dynamic teams and continuously grow as a developer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <h2 class="welcome-text">Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <h3><i class="fas fa-code"></i> Frontend Technologies</h3>
+        <ul>
+          <li><i class="fab fa-html5"></i> HTML</li>
+          <li><i class="fab fa-css3-alt"></i> CSS</li>
+          <li><i class="fab fa-js-square"></i> JavaScript</li>
+          <li><i class="fab fa-react"></i> React</li>
+          <li><i class="fab fa-angular"></i> Angular</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-server"></i> Backend Technologies</h3>
+        <ul>
+          <li><i class="fab fa-node-js"></i> Node.js</li>
+          <li><i class="fas fa-network-wired"></i> Express.js</li>
+          <li><i class="fas fa-database"></i> MongoDB</li>
+          <li><i class="fas fa-database"></i> MySQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-mobile-alt"></i> Mobile App Development</h3>
+        <ul>
+          <li><i class="fab fa-android"></i> Android (Kotlin)</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
+        <ul>
+          <li><i class="fab fa-python"></i> Python</li>
+          <li><i class="fas fa-code"></i> C</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section certifications">
+    <h2 class="welcome-text">Certifications</h2>
+    <div class="certificates-grid">
+
+      <div class="certificate-card">
+        <img src="webdesign.jpg" alt="Frontend Certification">
+        <h3>Frontend Development</h3>
+      </div>
+
+      <div class="certificate-card">
+        <img src="angular.jpg" alt="Angular Certification">
+        <h3>Angular Development</h3>
+      </div>
+
+      <div class="certificate-card">
+        <img src="python.jpg" alt="Python Certification">
+        <h3>Python Programming</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <h2 class="welcome-text">Projects</h2>
+    <div class="projects-container">
+
+      <div class="project-card">
+        <img src="project1.jpg" alt="Project 1" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Project Title 1</h3>
+          <p class="project-description">A brief description about your project 1.</p>
+          <a href="#" class="project-button">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project 2" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Project Title 2</h3>
+          <p class="project-description">A brief description about your project 2.</p>
+          <a href="#" class="project-button">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="project3.jpg" alt="Project 3" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Project Title 3</h3>
+          <p class="project-description">A brief description about your project 3.</p>
+          <a href="#" class="project-button">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <h2 class="welcome-text">Contact Me</h2>
+    <form class="contact-form" action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</div>
+<footer>
+  <p>&copy; 2025 John Doe | All Rights Reserved</p>
+  <div class="social-links">
+    <a href="https://linkedin.com/in/johndoe">LinkedIn</a>
+    <a href="https://github.com/johndoe">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
