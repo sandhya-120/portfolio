@@ -2,177 +2,285 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sandhya Diddi | Frontend Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to my portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <head>
+      <!-- Font Awesome CDN for icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-<div class="main">
+  <!-- Toggle Button -->
+  <input type="checkbox" id="toggle" />
+  <label for="toggle" class="hamburger">&#9776;</label>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">MyPortfolio</div>
-    <ul class="nav-links">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>My Portfolio</h2>
+    <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#resume">Resume</a></li>
     </ul>
-  </nav>
+  </div>
 
   <!-- Home Section -->
-  <section id="home" class="section home">
-    <div class="welcome-text">Welcome to My Portfolio</div>
-    <div class="logo-profile">
-      <img src="image.jpeg" alt="Sandhya Diddi Profile Photo" class="logo-image" />
-      <h1 class="logo-name">Sandhya Diddi</h1>
-      <p class="logo-title">Frontend Developer</p>
-    </div>
-    <div class="profile-text">
-      <p>Hello! I'm Sandhya, a Frontend Developer passionate about creating beautiful, user-friendly web experiences. I specialize in HTML, CSS, JavaScript, and modern frameworks like React and Angular.</p>
+  <section class="home" id="home">
+    <div sty class="home-container">
+      <h3 class="welcome">Welcome to My Portfolio</h3>
+
+      <div class="home-text">
+        <h1>Hello, I'm <span>Sandhya Diddi</span></h1>
+        <h2>Frontend Developer</h2>
+        <p>
+          I create beautiful and functional user interfaces with HTML, CSS, JavaScript.
+        </p>
+        <a href="#projects" class="btn">Explore My Work</a>
+        <a href="sandhya_diddi(resume).pdf" class="btn">View Resume</a>
+      </div>
+
+      <div class="home-image">
+        <img src="home.png" alt="Sandhya Diddi" />
+      </div>
     </div>
   </section>
-
-  <!-- About Section -->
-  <section id="about" class="section about">
-    <h2 class="welcome-text">About Me</h2>
-    <div class="about-content">
+  
+  <!-- About Section (Moved outside Home) -->
+  <section class="about" id="about">
+    <div class="about-container">
       <div class="about-text">
-        <p>Hello! I'm <strong>Sandhya Diddi</strong>, a passionate <strong>Frontend Developer</strong> dedicated to building responsive, clean, and user-friendly web applications.</p>
+        <h2>About Me</h2>
+        <p>
+          I'm a passionate Frontend Developer with a strong eye for design and attention to detail. I build responsive, interactive user experiences using modern technologies.
+        </p>
+        <p>
+          I love learning new tools and contributing to meaningful projects. My focus is on clean code, accessibility, and great UX.
+        </p>
 
-        <p>Currently pursuing my <strong>B.Tech</strong>, I focus on blending technology and marketing skills. I thrive on creativity, innovation, and continuous learning, with hands-on experience in community service and mobile app development.</p>
+        <div class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Responsive Web Design</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
 
-        <p>I am eager to contribute my skills and creativity to dynamic teams and continuously grow as a developer.</p>
+      <div class="about-image">
+        <img src="me.png" alt="Sandhya Diddi photo">
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="skills">
+    <div class="skills-container">
+      <h2>My Skills</h2>
+      <p>Here are the technical skills and technologies I work with:</p>
+  
+      <div class="skills-list">
+        <!-- Angular Skill -->
+        <div class="skill">
+          <i class="fab fa-angular"></i>
+          <h3>Angular</h3>
+        </div>
+  
+        <!-- React Skill -->
+        <div class="skill">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+        </div>
+  
+        <!-- Python Skill -->
+        <div class="skill">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+        </div>
+  
+        <!-- HTML Skill -->
+        <div class="skill">
+          <i class="fab fa-html5"></i>
+          <h3>HTML</h3>
+        </div>
+  
+        <!-- CSS Skill -->
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS</h3>
+        </div>
+  
+        <!-- JavaScript Skill -->
+        <div class="skill">
+          <i class="fab fa-js-square"></i>
+          <h3>JavaScript</h3>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section skills-section">
-    <h2 class="welcome-text">Skills</h2>
-    <div class="skills-grid">
-
-      <div class="skill-category">
-        <h3><i class="fas fa-code"></i> Frontend Technologies</h3>
-        <ul>
-          <li><i class="fab fa-html5"></i> HTML</li>
-          <li><i class="fab fa-css3-alt"></i> CSS</li>
-          <li><i class="fab fa-js-square"></i> JavaScript</li>
-          <li><i class="fab fa-react"></i> React</li>
-          <li><i class="fab fa-angular"></i> Angular</li>
-        </ul>
-      </div>
-
-      <div class="skill-category">
-        <h3><i class="fas fa-server"></i> Backend Technologies</h3>
-        <ul>
-          <li><i class="fab fa-node-js"></i> Node.js</li>
-          <li><i class="fas fa-network-wired"></i> Express.js</li>
-          <li><i class="fas fa-database"></i> MongoDB</li>
-          <li><i class="fas fa-database"></i> MySQL</li>
-        </ul>
-      </div>
-
-      <div class="skill-category">
-        <h3><i class="fas fa-mobile-alt"></i> Mobile App Development</h3>
-        <ul>
-          <li><i class="fab fa-android"></i> Android (Kotlin)</li>
-        </ul>
-      </div>
-
-      <div class="skill-category">
-        <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
-        <ul>
-          <li><i class="fab fa-python"></i> Python</li>
-          <li><i class="fas fa-code"></i> C</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Certifications Section -->
-  <section id="certifications" class="section certifications">
-    <h2 class="welcome-text">Certifications</h2>
+  <!-- Certificates Section -->
+  <section id="certifications" class="certifications">
+    <h2 class="section-title">Certifications</h2>
     <div class="certificates-grid">
-
+  
+      <!-- Certificate 1 -->
       <div class="certificate-card">
-        <img src="webdesign.jpg" alt="Frontend Certification">
-        <h3>Frontend Development</h3>
+        <img src="webdesign.jpg" alt="Web Design Certificate">
+        <h3>Web Design</h3>
+        <label for="cert1" class="view-btn">View Certificate</label>
       </div>
-
+      <!-- Modal for Certificate 1 -->
+      <input type="checkbox" id="cert1" class="modal-toggle" hidden>
+      <div class="modal">
+        <label for="cert1" class="overlay"></label>
+        <div class="modal-content">
+          <img src="webdesign.jpg" alt="Full Certificate">
+          <label for="cert1" class="close-btn">&times;</label>
+        </div>
+      </div>
+  
+      <!-- Repeat for more certificates -->
       <div class="certificate-card">
-        <img src="angular.jpg" alt="Angular Certification">
-        <h3>Angular Development</h3>
+        <img src="angular.jpg" alt="Angular Certificate">
+        <h3>Angular</h3>
+        <label for="cert2" class="view-btn">View Certificate</label>
       </div>
-
-      <div class="certificate-card">
-        <img src="python.jpg" alt="Python Certification">
-        <h3>Python Programming</h3>
+      <input type="checkbox" id="cert2" class="modal-toggle" hidden>
+      <div class="modal">
+        <label for="cert2" class="overlay"></label>
+        <div class="modal-content">
+          <img src="angular.jpg" alt="Full Certificate">
+          <label for="cert2" class="close-btn">&times;</label>
+        </div>
       </div>
-
+  
+       <!-- Certificate 3-->
+       <div class="certificate-card">
+        <img src="python.jpg" alt="python certificate">
+        <h3>python</h3>
+        <label for="cert3" class="view-btn">View Certificate</label>
+      </div>
+      <!-- Modal for Certificate 3 -->
+      <input type="checkbox" id="cert3" class="modal-toggle" hidden>
+      <div class="modal">
+        <label for="cert3" class="overlay"></label>
+        <div class="modal-content">
+          <img src="python.jpg" alt="Full Certificate">
+          <label for="cert3" class="close-btn">&times;</label>
+        </div>
+      </div>
+       <!-- Certificate 4 -->
+       <div class="certificate-card">
+        <img src="iot.png" alt="Internet of things certificate">
+        <h3>Internet of things</h3>
+        <label for="cert4" class="view-btn">View Certificate</label>
+      </div>
+      <!-- Modal for Certificate 4-->
+      <input type="checkbox" id="cert4" class="modal-toggle" hidden>
+      <div class="modal">
+        <label for="cert4" class="overlay"></label>
+        <div class="modal-content">
+          <img src="iot.png" alt="Full Certificate">
+          <label for="cert4" class="close-btn">&times;</label>
+        </div>
+      </div>
+       <!-- Certificate 5-->
+       <div class="certificate-card">
+        <img src="joy.png" alt="joy of computing using python certificate">
+        <h3>joy of computing using python</h3>
+        <label for="cert5" class="view-btn">View Certificate</label>
+      </div>
+      <!-- Modal for Certificate 5-->
+      <input type="checkbox" id="cert5" class="modal-toggle" hidden>
+      <div class="modal">
+        <label for="cert5" class="overlay"></label>
+        <div class="modal-content">
+          <img src="joy.png" alt="Full Certificate">
+          <label for="cert5" class="close-btn">&times;</label>
+        </div>
+      </div>
+       <!-- Certificate 6 -->
+       <div class="certificate-card">
+        <img src="hackerrank.png" alt="hackerrank python certificate">
+        <h3>hackerrank</h3>
+        <label for="cert6" class="view-btn">View Certificate</label>
+      </div>
+      <!-- Modal for Certificate 6-->
+      <input type="checkbox" id="cert6" class="modal-toggle" hidden>
+      <div class="modal">
+        <label for="cert6" class="overlay"></label>
+        <div class="modal-content">
+          <img src="hackerrank.png" alt="Full Certificate">
+          <label for="cert6" class="close-btn">&times;</label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--project-->
+  <section class="projects" id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="sachivalayam-services.png" alt="Project 1">
+        <h3>Sachivalayam-Services</h3>
+        <p>Short description of the project goes here. What technologies you used, its functionality, and its impact.</p>
+        <a href="https://github.com/sandhya-120/CSP" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="calculator.png" alt="Project 2">
+        <h3>Simple Calculator</h3>
+        <p>Short description of the project goes here. What technologies you used, its functionality, and its impact.</p>
+        <a href="https://github.com/sandhya-120/SimpleCalculator" class="btn">View Project</a>
+      </div>
+       <div class="project-card">
+        <img src="calculator.png" alt="Project 2">
+        <h3>Simple Calculator</h3>
+        <p>Short description of the project goes here. What technologies you used, its functionality, and its impact.</p>
+        <a href="https://github.com/sandhya-120/SimpleCalculator" class="btn">View Project</a>
+      </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section projects">
-    <h2 class="welcome-text">Projects</h2>
-    <div class="projects-container">
-
-      <div class="project-card">
-        <img src="project1.jpg" alt="Project 1" class="project-image">
-        <div class="project-content">
-          <h3 class="project-title">Project Title 1</h3>
-          <p class="project-description">A brief description about your project 1.</p>
-          <a href="#" class="project-button">View Project</a>
-        </div>
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <div class="contact-left">
+        <h2>Contact</h2>
+        <img src="contact.png" alt="Contact Illustration" />
       </div>
-
-      <div class="project-card">
-        <img src="project2.jpg" alt="Project 2" class="project-image">
-        <div class="project-content">
-          <h3 class="project-title">Project Title 2</h3>
-          <p class="project-description">A brief description about your project 2.</p>
-          <a href="#" class="project-button">View Project</a>
-        </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message" rows="5" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
       </div>
-
-      <div class="project-card">
-        <img src="project3.jpg" alt="Project 3" class="project-image">
-        <div class="project-content">
-          <h3 class="project-title">Project Title 3</h3>
-          <p class="project-description">A brief description about your project 3.</p>
-          <a href="#" class="project-button">View Project</a>
-        </div>
-      </div>
-
     </div>
   </section>
+  <!-- Resume Section -->
+  <section id="resume" class="section resume-section">
+    <h2 class="welcome-text">Resume</h2>
+    <p>Click below to download my resume:</p>
+    <a href="sandhya_diddi(resume).pdf" class="project-button" download>Download Resume</a>
+    <a href="sandhya_diddi(resume).pdf" class="project-button" target="_blank">View Resume</a>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section contact-section">
-    <h2 class="welcome-text">Contact Me</h2>
-    <form class="contact-form" action="https://formspree.io/f/yourFormID" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
   </section>
+  <footer>
+    <p>&copy; 2025 Sandhya Diddi | All Rights Reserved</p>
+    <div class="social-links">
+      <a href="https://linkedin.com/in/sandhyadiddi" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/sandhyadiddi" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
 
 </div>
-<footer>
-  <p>&copy; 2025 John Doe | All Rights Reserved</p>
-  <div class="social-links">
-    <a href="https://linkedin.com/in/johndoe">LinkedIn</a>
-    <a href="https://github.com/johndoe">GitHub</a>
-  </div>
-</footer>
-
 </body>
 </html>
